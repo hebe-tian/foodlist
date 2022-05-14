@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<form method="post">
+    Name <input type="text" name="name" autocomplete="off" required>
+    <input class="btn" type="submit" name="submit" value="Add">
+</form>
+<ul class="list">
+    {% for food in foods %}
+    <li>{{ food.name }}
+        <span class="float-right">
+            <a class="search" href="https://www.baidu.com/s?wd={{ food.name }}" target="_blank" title="Find">Baidu</a>
+        </span>
+    </li>
+    {% endfor %}  {# 使用 endfor 标签结束 for 语句 #}
+</ul>
+{% endblock %}
