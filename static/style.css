@@ -105,3 +105,7 @@ input[type=text] {
 .delete {
     display: inline;
 }
+
+.pic {
+    width: 40px;
+}
