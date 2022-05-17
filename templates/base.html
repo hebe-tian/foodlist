@@ -13,10 +13,10 @@
     {% for message in get_flashed_messages() %}
         <div class="alert">{{ message }}</div>
     {% endfor %}
-    <h2>
+    <h1>
         <img alt="Head" class="pic" src="{{ url_for('static', filename='head.webp') }}">
         Food List For Pyx
-    </h2>
+    </h1>
     <nav>
         <ul>
             <li><a href="{{ url_for('food_index') }}">Index</a></li>
